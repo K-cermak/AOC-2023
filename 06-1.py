@@ -1,6 +1,6 @@
 def main() -> None:
     data = []
-    with open("06-input.txt", "r") as file:
+    with open("06-1-input.txt", "r") as file:
         data = file.readlines()
         # clean \n
         data = [line.rstrip() for line in data]
