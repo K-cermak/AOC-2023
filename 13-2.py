@@ -29,14 +29,6 @@ def main() -> None:
 
         for index in range(len(game) * len(game[0])):
             change_game(game, index, True)
-
-            """
-            for line in game:
-                for char in line:
-                    print(char, end="")
-                print()
-            print()
-            """
             
             symmetry = get_symmetry(game, orig_symmetry)
             if symmetry is None:
@@ -53,7 +45,6 @@ def main() -> None:
         if subcount != 0:
             count += subcount
         else:
-            print(orig_symmetry)
             is_horizontal, sym_index = orig_symmetry
             if is_horizontal:
                 count += (sym_index + 1) * 100
@@ -61,13 +52,6 @@ def main() -> None:
                 count += (sym_index + 1)
 
     print(count)
-
-
-    # too high: 54500
-    # too low: 25864
-    # 42381 not right
-
-    # 36755
 
 
 def change_game(game, index, rec_allow):
@@ -130,8 +114,6 @@ def is_valid_solution(game, is_horizontal, i):
             bottom_index += 1
 
         return True
-
-
 
 
 if __name__ == "__main__":
