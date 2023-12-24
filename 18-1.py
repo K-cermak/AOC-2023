@@ -12,8 +12,6 @@ def main() -> None:
         data[index] = line.split(" (")[0]
         data[index] = data[index].split(" ")
 
-    print(data)
-    
     pos_x = pos_y = 0
     all_conns = []
     for direction, dest in data:
