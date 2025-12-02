@@ -2,7 +2,7 @@
 
 --- 
 
-## Days completition status
+## Days completition status:
 
 | Day:     | Part 1| Part 2|
 |-------------|-------|-------|
